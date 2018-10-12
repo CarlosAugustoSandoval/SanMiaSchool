@@ -14,3 +14,12 @@ For the institution:
 7. Generation of reports and certifications.
 
 For teachers:
+1. Control of class activities.
+2. Attendance control.
+3. Online qualification.
+4. Communication with the guardians.
+
+For the guardians
+1. Monitoring of academic activities.
+2. Communication with the teacher and group or institution.
+3. School calendar day (meetings, citations and activities in general by the institution or teacher).
