@@ -1,4 +1,4 @@
-# SanMiaScool
+# SanMiaSchool
 Management of school processes
 
 The platform integrates all the actors of the students' school processes, it is possible to implant it in all types of educational establishments, from basic primary to technical, always managing the concepts of degrees, groups and subjects for the purely academic order.
