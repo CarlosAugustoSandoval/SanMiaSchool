@@ -25,8 +25,24 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+//    protected $redirectTo = '/home';
+    protected function authenticated($request, $user)
+    {
+//        dd($user);
+//        $required = [
+//            'username', 'phone', 'bio', 'dobday', 'dobmonth', 'dobyear',
+//            'firstname', 'lastname', 'topics', 'nationality'
+//        ];
+//
+//        $userAtts = array_filter(array_only($user->toArray(), $required));
+//
+//        if (count($userAtts) != count($required)) {
+//            return redirect('/user-prof');
+//        }
 
+//        return redirect('home');
+        return $user;
+    }
     /**
      * Create a new controller instance.
      *
