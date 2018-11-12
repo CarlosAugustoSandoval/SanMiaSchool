@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+let mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +11,22 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+  mix.autoload({
+    'jquery': ['$', 'window.jQuery', 'jQuery'],
+})
+
+mix.webpackConfig({
+    resolve: {
+        alias: {
+        	'Api': path.resolve(__dirname, 'resources/js/api/'),
+        	'Components': path.resolve(__dirname, 'resources/js/components/'),
+        	'Constants': path.resolve(__dirname, 'resources/js/constants/'),
+        	'Container': path.resolve(__dirname, 'resources/js/container/'),
+        	'Views': path.resolve(__dirname, 'resources/js/views/'),
+        	'Helpers': path.resolve(__dirname, 'resources/js/helpers/'),
+        	'Themes': path.resolve(__dirname, 'resources/js/themes/')
+        }
+    }
+});
+
+mix.js('resources/js/main.js', 'public/js');
